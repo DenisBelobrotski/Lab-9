@@ -13,7 +13,7 @@ class StringsEditor {
         while (reader.ready()) {
             line.append(reader.readLine());
             Regex.deleteSymbolsInBrackets(line);
-            //Regex.deleteDigits(line);
+            Regex.deleteDigits(line);
             Regex.deleteZeros(line);
             System.out.println(line);
             writer.write(line.toString() + "\n");
